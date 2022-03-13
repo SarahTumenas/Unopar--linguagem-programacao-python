@@ -25,3 +25,24 @@ print(f"Resultado da operacao_1 = {operacao_1}")
 print(f"Resultado da operacao_2 = {operacao_2}")
 print(f"Resultado da operacao_3 = {operacao_3}")
 print(f"Resultado da operacao_4 = {operacao_4}")
+
+a = 2
+b = 0.5
+c = 1
+x = input("Digite o valor de x: ")
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(x))
+
+ # aqui fazemos a conversão da string para o tipo numérico
+x = float(x)
+
+y = a * x ** 2 + b * x + c
+
+print(f"O resultado de y para x = {x} é {y}.")
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(x))
