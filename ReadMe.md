@@ -8,3 +8,8 @@ Repositório destinado aos estudos, exercícios e trabalhos da disciplina lingua
   - Estruturas Lógicas, Condicionais e de Repetição em Python
   - Implementando Soluções em Python Mediante Funções
   - Importância de saber utilizar modelos de estrutura de dados
+
+- Aula2
+  - Estrutura de dados em Python
+  - Algoritmos de busca
+  - Algoritmos de Ordenação
