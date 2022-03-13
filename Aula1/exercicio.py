@@ -1,0 +1,20 @@
+# Vamos criar uma solução que procura pelas vogais “A", “o" em um texto. Toda vez que essas letras são encontradas,
+# devemos informar que encontramos e qual posição do texto ela está. Nosso
+# texto será:
+# texto = A inserção de comentários no código do programa é
+# uma prática normal. Em função disso, toda linguagem de programação
+# tem alguma maneira de permitir que comentários sejam inseridos nos
+# programas. O objetivo é adicionar descrições em partes do código, seja
+# para documentá-lo ou para adicionar uma descrição do algoritmo
+# implementado (BANIN, 2018, p. 45).
+
+texto = """
+A inserção de comentários no código do programa é uma prática normal.
+Em função disso, toda linguagem de programação tem alguma maneira de permitir que comentários sejam inseridos nos programas.
+O objetivo é adicionar descrições em partes do código, seja para documentá-lo ou para adicionar uma descrição do algoritmo implementado (BANIN, p. 45, 2018)."
+"""
+for i, c in enumerate(texto):
+    if c == 'A' or c == 'o':
+        print(f"Vogal '{c}' encontrada, na posição {i}")
+    else:
+        continue
