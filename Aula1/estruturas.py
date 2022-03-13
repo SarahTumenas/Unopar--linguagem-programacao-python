@@ -58,3 +58,47 @@ while numero != 0:
         print("Número par!")
     else:
         print("Número ímpar!")
+
+#o comando "for" seguido da variável de controle "c", na sequência o comando "in", por fim, a sequência sobre a qual a estrutura deve iterar.
+# Os dois pontos marcam o início do bloco que deve ser repetido.
+
+nome = "Guido"
+for c in nome:
+    print(c)
+
+#Com o comando for, podemos usar a função enumerate() para retornar à posição de cada item, dentro da sequência. Considerando o exemplo dado,
+# no qual atribuímos a variável "nome" o valor de "Guido", "G" ocupa a posição 0 na sequência, "u" ocupa a posição 1, "i" a posição 2,
+# e assim por diante. Veja que a variável "i" é usada para capturar a posição e a variável "c" cada caractere da palavra.
+
+nome = "Guido"
+for i, c in enumerate(nome):
+    print(f"Posição = {i}, valor = {c}")
+
+#A função range() pode ser usada de três formas distintas:
+# Método 1: passando um único argumento que representa a quantidade de vezes que o laço deve repetir;
+for i in range(10):
+    print(i)
+
+# Método 2: passando dois argumentos, um que representa o início das repetições e outro o limite superior (NÃO INCLUÍDO) do valor da variável de controle;
+for i in range(0, 5):
+    print(i)
+
+# Método 3: Passando três argumentos, um que representa o início das repetições; outro, o limite superior (NÃO INCLUÍDO) do valor da variável de controle e um que representa o incremento.
+for i in range(0, 20, 2):
+    print(i)
+
+# Exemplo de uso do break
+disciplina = "Linguagem de programação"
+for c in disciplina:
+    if c == 'a':
+        break
+    else:
+        print(c)
+
+# Exemplo de uso do continue
+disciplina = "Linguagem de programação"
+for c in disciplina:
+    if c == 'a':
+        continue
+    else:
+        print(c)
