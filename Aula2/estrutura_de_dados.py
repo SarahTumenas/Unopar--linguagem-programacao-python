@@ -23,3 +23,4 @@ print(f"Tamanho do texto = {len(texto)}\n")
 palavras = texto.split()
 print(f"palavras = {palavras}")
 print(f"Tamanho de palavras = {len(palavras)}")
+
