@@ -14,6 +14,7 @@ print("Antes da listcomp = ", linguagens)
 # valor de "linguagens".
 
 linguagens = [item.lower() for item in linguagens]
-linguagens = [item.upper() for item in linguagens]
+print("\nDepois da listcomp = ", linguagens)
 
+linguagens = [item.upper() for item in linguagens]
 print("\nDepois da listcomp = ", linguagens)
