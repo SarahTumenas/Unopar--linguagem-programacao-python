@@ -1,8 +1,12 @@
 # List comprehension (Compreensões de lista)
 #É uma estrutura de dados do tipo sequencial que possui como principal característica ser mutável
 
-linguagens = ["Python", "Java", "JavaScript", "C", "C#", "C++", "Swift", "Go", "Kotlin"]
+#linguagens = ["Python", "Java", "JavaScript", "C", "C#", "C++", "Swift", "Go", "Kotlin"]
+
+linguagens = '''Python Java JavaScript C C# C++ Swift Go Kotlin'''.split()
+# Essa sintaxe produz o mesmo resultado que a linha 4
 print("Antes da listcomp = ", linguagens)
+
 
 # como se trata da criação de uma lista, usam-se colchetes! Dentro do colchetes há
 # uma variável chamada "item" que representará cada valor da lista original. Veja que usamos item.lower() for
@@ -10,5 +14,6 @@ print("Antes da listcomp = ", linguagens)
 # valor de "linguagens".
 
 linguagens = [item.lower() for item in linguagens]
+linguagens = [item.upper() for item in linguagens]
 
 print("\nDepois da listcomp = ", linguagens)
