@@ -15,8 +15,7 @@ Repositório destinado aos estudos, exercícios e trabalhos da disciplina lingua
   - Algoritmos de Ordenação
 
 - Aula3
-  - Linguagem de programação: Aplicação de banco de dados com Python
-  - Classes e Métodos em Python
+   - Classes e Métodos em Python
   - Bibliotecas e Módulos em Python
   - Aplicação de banco de dados com Python
    
