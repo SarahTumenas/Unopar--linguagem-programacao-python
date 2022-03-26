@@ -71,6 +71,7 @@ def executar_insertion_sort(lista):
     for i in range(1, n):
         valor_inserir = lista[i]
         j = i - 1
+
         while j >= 0 and lista[j] > valor_inserir:
             lista[j + 1] = lista[j]
         j -= 1
@@ -95,13 +96,6 @@ def executar_merge_sort(lista):
     return executar_merge(esquerda, direita)
 
 
-lista1 = [10, 9, 5, 8, 11, -1, 3]
-executar_merge_sort(lista1)
-print(lista1)
-
-
-###########################################
-
 def executar_merge(esquerda, direita):
     sub_lista_ordenada = []
     topo_esquerda, topo_direita = 0, 0
@@ -117,6 +111,31 @@ def executar_merge(esquerda, direita):
         return sub_lista_ordenada
 
 
-lista = [10, 9, 5, 8, 11, -1, 3]
-executar_merge(lista)
+lista = [15, 9, 5, 8, 11, -1, 3]
+executar_merge_sort(lista)
+print(lista)
+
+
+###########################################
+def executar_quicksort(lista, inicio, fim):
+    if inicio < fim:
+        pivo = executar_particao(lista, inicio, fim)
+        executar_quicksort(lista, inicio, pivo - 1)
+        executar_quicksort(lista, pivo + 1, fim)
+    return lista
+
+
+def executar_particao(lista, inicio, fim):
+    pivo = lista[fim]
+    esquerda = inicio
+    for direita in range(inicio, fim):
+        if lista[direita] <= pivo:
+            lista[direita], lista[esquerda] = lista[esquerda], lista[direita]
+            esquerda += 1
+            lista[esquerda], lista[fim] = lista[fim], lista[esquerda]
+            return esquerda
+
+
+lista = [17, 9, 5, 8, 11, -1, 3]
+executar_quicksort(lista, inicio=0, fim=len(lista) - 1)
 print(lista)
