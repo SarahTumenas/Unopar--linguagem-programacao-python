@@ -8,6 +8,16 @@ def executar_busca_linear(lista, valor):
         if valor == elemento: return True
     return False
 
+import random
+
+lista = random.sample(range(100), 20)
+print(sorted(lista))
+executar_busca_linear(lista,10)
+
+
+
+
+
 
 vogais = 'aeiou'
 resultado = vogais.index('e')

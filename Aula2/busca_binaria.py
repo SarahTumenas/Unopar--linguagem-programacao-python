@@ -1,5 +1,3 @@
-import lista as lista
-
 
 def executar_busca_binaria(lista, valor):
 
@@ -17,3 +15,4 @@ def executar_busca_binaria(lista, valor):
     else:
         return True
     return False
+
